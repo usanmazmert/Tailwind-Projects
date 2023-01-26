@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --primary-blue: #00d8ff;
+  --primary-purple: #6a00ff;
+}
+body{
+  @apply bg-black;
+}
+
+@layer base{
+  *{
+    @apply font-[Kanit]
+  }
+  h1{
+    @apply text-3xl font-bold;
+  }
+  li{
+    @apply p-4;
+  }
+
+  button{
+    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-7 rounded-3xl
+  }
+}
+
+@layer utilities{
+  .root-blue{
+    color: var(--primary-blue);
+  }
+  .rbg-blue{
+    background-color: var(--primary-blue);
+  }
+  .root-purple{
+    color: var(--primary-purple);
+  }
+  .side-bar{
+    @apply w-full bg-black text-white absolute left-0 h-full text-center transition duration-[0.5s];
+  }
+  .activated{
+    @apply translate-x-[-100%];
+  }
+}
