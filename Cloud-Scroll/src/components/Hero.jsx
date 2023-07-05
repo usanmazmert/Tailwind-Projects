@@ -12,7 +12,7 @@ const Hero = (props) => {
     console.log(props.offSet)
   return (
     <div name="home" className={'relative w-full bg-zinc-200 flex flex-col justify-between top-[80px]'}>
-        <div className='grid md:grid-cols-2 max-w-[1240px] h-full m-auto relative'>
+        <div className='grid md:grid-cols-2 max-w-[1240px] h-full m-auto relative pb-16'>
             <div className='flex flex-col justify-center md:items-start w-full px-4 py-8'>
                 <p className='text-2xl'>Unique Sequencing & Production</p>
                 <h1 className='py-3 text-3xl md:text-5xl font-bold'>Cloud Management</h1>
